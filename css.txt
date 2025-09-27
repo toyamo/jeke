@@ -1,0 +1,318 @@
+/* ============================================= */
+/* 一、输入框上方【顶部功能栏】的所有圆形按钮      */
+/* ============================================= */
+
+/* 这是对所有圆形按钮的通用设置，移除它们的默认样式 */
+#chat-input-actions-top .chat-action-icon-btn {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    /* 统一设置背景图样式 */
+    background-size: 65%; /* 图片占按钮大小的65%，可以按需调整 */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 隐藏所有圆形按钮内部的原始SVG图标 */
+#chat-input-actions-top .chat-action-icon-btn svg {
+    display: none;
+}
+
+/* 1. “+”号 (表情面板) 按钮 */
+#open-sticker-panel-btn {
+    background-image: url('https://your-image-url.png');
+    font-size: 0; /* 隐藏原始的"+"号 */
+}
+
+/* 2. 发送照片按钮 (相机图标) */
+#send-photo-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 3. 上传图片按钮 (相册图标) */
+#upload-image-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 4. 转账按钮 (￥) */
+#transfer-btn {
+    background-image: url('https://your-image-url.png');
+    font-size: 0; /* 隐藏原始的"￥" */
+}
+
+/* 5. 发送语音按钮 (麦克风图标) */
+#voice-message-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 6. 外卖请求按钮 (外卖袋图标) */
+#send-waimai-request-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 7. 视频通话按钮 (单人) */
+#video-call-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 8. 群视频通话按钮 (多人) */
+#group-video-call-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 9. 发起投票按钮 (列表图标) */
+#send-poll-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 10. 分享链接按钮 (链接图标) */
+#share-link-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 11. 共享位置按钮 (定位图标) */
+#share-location-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 12. 五子棋按钮 (棋盘图标) */
+#gomoku-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 13. 购物按钮 (购物车图标) */
+#open-shopping-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 14. 拍一拍按钮 (手掌图标) */
+#pat-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 15. 导演模式/编辑按钮 (铅笔图标) */
+#edit-last-response-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 16. 重新生成按钮 (刷新图标) */
+#regenerate-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 17. 推进剧情按钮 (快进图标) */
+#propel-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 18. 群公告板按钮 (喇叭图标) */
+#show-announcement-board-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+
+/* ============================================= */
+/* 二、输入框【右侧】的发送和等待按钮             */
+/* ============================================= */
+
+/* 1. "等待回复" 按钮 */
+#wait-reply-btn {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    width: 40px;
+    height: 40px;
+}
+/* 替换图片 */
+#wait-reply-btn img {
+    content: url('https://your-image-url.png');
+    height: 30px !important;
+    width: 30px !important;
+}
+
+/* 2. "发送" 按钮 */
+#send-btn {
+    background-image: url('https://your-image-url.png');
+    background-color: transparent !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60px; /* 您可以自定义发送按钮的宽度 */
+    font-size: 0; /* 隐藏原始的"发送"文字 */
+}
+
+
+
+/* ================================== */
+/* 一、表情面板顶部的所有按钮        */
+/* ================================== */
+
+/* 这是对表情面板按钮的通用设置，统一大小和样式 */
+#sticker-panel-header .panel-btn {
+    font-size: 0 !important; /* 强制隐藏所有原始文字 */
+    color: transparent !important;
+    width: 28px; /* 设置一个统一的宽度 */
+    height: 28px; /* 设置一个统一的高度 */
+    padding: 0; /* 移除内边距，让图片完全填充 */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 1. “取消”按钮 */
+#close-sticker-panel-btn {
+    background-image: url('https://your-image-url.png'); 
+}
+
+/* 2. “管理”按钮 */
+#manage-stickers-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 3. “批量”按钮 */
+#add-sticker-batch-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 4. “URL”按钮 */
+#add-sticker-url-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 5. “上传”按钮 */
+#upload-sticker-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+
+/* ================================== */
+/* 二、长期记忆页面顶部的按钮        */
+/* ================================== */
+
+/* 这是对长期记忆顶部按钮的通用设置 */
+#long-term-memory-screen .header .action-btn {
+    font-size: 0 !important; /* 强制隐藏所有原始文字 */
+    color: transparent !important;
+    width: 26px; /* 设置一个统一的宽度 */
+    height: 26px; /* 设置一个统一的高度 */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 1. “精炼”按钮 */
+#refine-memory-btn-header {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 2. “总结”按钮 */
+#summarize-recent-btn-header {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 3. “+” (手动添加) 按钮 */
+#add-manual-memory-btn-header {
+    background-image: url('https://your-image-url.png');
+}
+
+
+
+/* ============================================= */
+/* 一、动态主页功能栏按钮 (“说说”、“动态”、“相册”) */
+/* ============================================= */
+
+/* 这是对这三个按钮的通用设置 */
+.qzone-actions-bar .action-item {
+    font-size: 0 !important; /* 隐藏原始文字 */
+    height: 32px; /* 给按钮一个固定的高度 */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 1. “说说”按钮 */
+#create-shuoshuo-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 2. “动态”按钮 */
+#create-post-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 3. “相册”按钮 */
+#open-album-btn {
+    background-image: url('https://your-image-url.png');
+}
+
+
+/* ============================================= */
+/* 二、每条动态下方的交互图标 (转发、点赞、收藏) */
+/* ============================================= */
+
+/* 通用设置：统一大小并隐藏原始SVG图标 */
+.post-feedback-icons .action-icon {
+    width: 28px;
+    height: 28px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.post-feedback-icons .action-icon svg {
+    display: none; /* 隐藏原始图标 */
+}
+
+/* 1. 转发图标 */
+.post-feedback-icons .action-icon.repost {
+    background-image: url('https://your-image-url.png');
+}
+
+/* 2. 点赞图标 */
+.post-feedback-icons .action-icon.like {
+    background-image: url('https://your-image-url.png');
+}
+/* (可选) 为“点赞后”设置一张不同的、高亮的图片 */
+.post-feedback-icons .action-icon.like.active {
+    background-image: url('https://your-highlighted-like-image-url.png');
+}
+
+
+/* 3. 收藏图标 */
+.post-feedback-icons .action-icon.favorite {
+    background-image: url('https://your-image-url.png');
+}
+/* (可选) 为“收藏后”设置一张不同的、高亮的图片 */
+.post-feedback-icons .action-icon.favorite.active {
+    background-image: url('https://your-highlighted-favorite-image-url.png');
+}
+
+
+/* ============================================= */
+/* 三、评论输入区的按钮 (表情、发送)             */
+/* ============================================= */
+
+/* 1. 评论区的“表情”按钮 */
+.post-footer .comment-sticker-btn {
+    width: 28px;
+    height: 28px;
+    background-image: url('https://your-image-url.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.post-footer .comment-sticker-btn svg {
+    display: none; /* 隐藏原始图标 */
+}
+
+/* 2. 评论区的“发送”按钮 */
+.post-footer .comment-send-btn {
+    font-size: 0; /* 隐藏“发送”文字 */
+    width: 50px; /* 自定义宽度 */
+    background-image: url('https://your-image-url.png');
+    background-color: transparent !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
